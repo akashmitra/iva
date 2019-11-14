@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Create Message</title>
+  </head>
+  
+  <body>
+    <h2>Add Message</h2>
+    <form action="/createMessage" method="post">
+      <input type="text" name="key" placeholder="Enter Key"/> <br/>
+      
+      <div id="content_div">
+        <input type="text" name="content" placeholder="Enter Content"/>
+      </div>
+
+      <br/><br/>
+      <button type="button" onclick="addContent()">Add Content</button> <button type="submit">Save Message</button>
+    </form>
+    
+    
+    <script>
+      const addContent=()=>{
+        let input = document.createElement('input'); 
+        input.type = "text";
+        input.name = "content";
+        input.placeholder = "Enter Content";
+        
+        document.getElementById('content_div').appendChild(input); 
+      }
+    </script>
+  </body>
+</html>
