@@ -32,7 +32,7 @@
     extended: true
   }));
 
-  dbConnectUtil();
+  // dbConnectUtil();
 
   app.post('/', (request, response) => {
     //console.log(request);

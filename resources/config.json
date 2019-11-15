@@ -5,7 +5,6 @@
         "json_indentation": 4,
         "cache_stdTTL": 0,
         "cache_checkperiod": 0,
-      
         "config_id": "development",
         "node_port": 3000,
         "log_filename":"iva-dev.log",
