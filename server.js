@@ -45,8 +45,8 @@
 
     // Dialogflow intent Function Mapping
     let intentMap = new Map();
-    intentMap.set('DefaultWelcomeIntent', welcome_intent.welcome);
-    intentMap.set('DefaultFallbackIntent', fallback_intent.fallback);
+    intentMap.set('Default Welcome Intent', welcome_intent.welcome);
+    intentMap.set('Default Fallback Intent', fallback_intent.fallback);
     intentMap.set('Exit', exit_intent.exit);
 
     agent.handleRequest(intentMap);
@@ -66,11 +66,10 @@
     response.sendFile(path.join(__dirname + '/views/message.html'));
     console.info(`Get hit!`);
   });
-  
+
   app.get('/message', (request, response) => {
     response.sendFile(path.join(__dirname + '/views/message.html'));
   });
-
 
   app.post('/createMessage', (request, response) => {
     if (request.body.key === undefined || request.body.content === undefined) {
@@ -96,7 +95,6 @@
     messageService.addMessage(callback);
   });
 
-
   app.get('/getMessage', (request, response) => {
     if (request.query.key === undefined) {
       response.send('Error: Required parameters are empty!');
@@ -120,7 +118,8 @@
       }
     };
     messageService.getMessage(callback);
-    
+
   });
+
 
 }());

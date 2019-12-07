@@ -7,25 +7,26 @@
         "cache_checkperiod": 0,
         "config_id": "development",
         "node_port": 3000,
-        "log_filename":"iva-dev.log",
-        "db_url": "mongodb+srv://iva_user_dev:tcmueNU5sTaEoKca@wyndham-nextgen-vacation-zcbrx.mongodb.net/dev"
+        "log_filename": "iva-dev.log",
+        "db_url": "mongodb+srv://iva_user_dev:tcmueNU5sTaEoKca@wyndham-nextgen-vacation-zcbrx.mongodb.net/dev",
+        "api_endpoint": "https://aog-chatbot-server.glitch.me/"
     },
     "testing": {
         "config_id": "testing",
         "node_port": 3000,
-        "log_filename":"iva-test.log",
+        "log_filename": "iva-test.log",
         "db_url": "mongodb+srv://iva_user_dev:tcmueNU5sTaEoKca@wyndham-nextgen-vacation-zcbrx.mongodb.net/test"
     },
     "staging": {
         "config_id": "staging",
         "node_port": 8080,
-        "log_filename":"iva-stage.log",
+        "log_filename": "iva-stage.log",
         "db_url": "mongodb+srv://iva_user_dev:tcmueNU5sTaEoKca@wyndham-nextgen-vacation-zcbrx.mongodb.net/stage"
     },
     "production": {
         "config_id": "production",
         "node_port": 8080,
-        "log_filename":"iva-prod.log",
+        "log_filename": "iva-prod.log",
         "db_url": "mongodb+srv://iva_user_dev:tcmueNU5sTaEoKca@wyndham-nextgen-vacation-zcbrx.mongodb.net/prod"
     }
 }
